@@ -6,10 +6,10 @@
 <body>
 	
 	<form name="formulario" action="inscribir.php" method="POST">
-		Nombre: <input type="text" name="nombre"><br>
-		Usuario: <input type="text" name="usuario"><br>
-		Clave: <input type="password" name="clave"><br>
-		Reingrese clave: <input type="password" name="clave2"><br>
+		<input type="text" name="nombre" placeholder="Nombre"><br>
+		<input type="text" name="usuario" placeholder="Usuario"><br>
+		<input type="password" name="clave" placeholder="Clave"><br>
+		<input type="password" name="clave2" placeholder="Reingrese clave"><br>
 		<input type="button" value="Inscribir" onclick="validar();">
 	</form>
 	
@@ -47,12 +47,12 @@
 			if (document.formulario.clave.value!=document.formulario.clave2.value)
 					{
 						alert("Las claves no coinciden");
-							document.formulario.clave.focus();
-							return 0;
+						document.formulario.clave.focus();
+						return 0;
 					};
 
 
-			alert("Todo OK");
+			document.formulario.submit();
 
 		}
 	</script>
