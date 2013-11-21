@@ -10,6 +10,4 @@ mysql_query("INSERT INTO usuarios VALUES('','$nombre','$usuario','$clave')");
 mysql_close();
 
 
-
-
 ?>
